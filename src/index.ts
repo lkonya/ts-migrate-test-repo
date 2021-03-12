@@ -1,6 +1,8 @@
 'use strict';
 
+// @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'require'. Do you need to install... Remove this comment to see the full error message
 const http = require('http');
+// @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'process'. Do you need to install... Remove this comment to see the full error message
 const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
